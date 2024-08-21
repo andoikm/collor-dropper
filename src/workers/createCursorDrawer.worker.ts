@@ -4,7 +4,9 @@ type Coordinates = {
 };
 
 const createCursorDrawer = () => {
-  const initializeContext = (canvas: HTMLCanvasElement): CanvasRenderingContext2D => {
+  const initializeContext = (
+    canvas: HTMLCanvasElement,
+  ): CanvasRenderingContext2D => {
     const ctx = canvas.getContext('2d', { willReadFrequently: true });
     if (!ctx) {
       throw new Error('Could not get canvas context');
@@ -104,7 +106,8 @@ const createCursorDrawer = () => {
         for (let x = startX; x <= endX; x += this.smallSquareSize) {
           const distance = Math.hypot(this.cursorX - x, this.cursorY - y);
           if (distance <= this.cursorRadius) {
-            const colorIndex = Math.floor(distance / this.smallSquareSize) % colorsSet.length;
+            const colorIndex =
+              Math.floor(distance / this.smallSquareSize) % colorsSet.length;
             drawSquare(
               this.ctx,
               x,

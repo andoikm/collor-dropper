@@ -1,13 +1,13 @@
 [data-theme='dark'] {
-    --background-color: #1e1e1e;
-    --background-color-active: #bb86fc;
-    --text-color: #fff;
-    --border-color: #333;
-    --button-background: #2c2c2c;
-    --button-text-color: #fff;
-    --button-background-disabled: #444;
-    --button-text-color-disabled: #666;
-    --progress-background: #333;
-    --progress-color: #bb86fc;
-    --shadow-color: rgba(0, 0, 0, 0.6);
+  --background-color: #1e1e1e;
+  --background-color-active: #1de9b6;
+  --text-color: #fff;
+  --border-color: #333;
+  --button-background: #2c2c2c;
+  --button-text-color: #fff;
+  --button-background-disabled: #444;
+  --button-text-color-disabled: #666;
+  --progress-background: #333;
+  --progress-color: #1de9b6;
+  --shadow-color: rgba(0, 0, 0, 0.6);
 }

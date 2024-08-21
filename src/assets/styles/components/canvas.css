@@ -1,24 +1,24 @@
 canvas {
-    border-radius: 10px;
-    border: 2px solid var(--border-color);
-    box-shadow: 0 2px 10px var(--shadow-color);
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .canvas-container {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    --canvas-size: 500px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  --canvas-size: 500px;
 }
 
 .canvas-container canvas {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    background-color: transparent;
-    height: var(--canvas-size);
-    width: var(--canvas-size);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: transparent;
+  height: var(--canvas-size);
+  width: var(--canvas-size);
 }
 
 #canvas-worker {
-    cursor: none;
+  cursor: none;
 }

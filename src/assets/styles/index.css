@@ -1,6 +1,6 @@
-@import "./themes/index.css";
-@import "./layouts/index.css";
-@import "./components/index.css";
+@import './themes/index.css';
+@import './layouts/index.css';
+@import './components/index.css';
 
 * {
   margin: 0;

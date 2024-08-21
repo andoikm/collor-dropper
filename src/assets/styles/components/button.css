@@ -1,26 +1,26 @@
 .button {
-    gap: 5px;
-    font-size: 12px;
-    display: flex;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 50px;
-    align-items: center;
-    border: 1px solid var(--border-color);
-    background-color: var(--button-background);
-    color: var(--button-text-color);
-    fill: var(--button-text-color);
-    transition: background-color 0.3s ease;
+  gap: 5px;
+  font-size: 12px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  fill: var(--button-text-color);
+  transition: background-color 0.3s ease;
 }
 
 .button:hover,
 .button--active {
-    background-color: var(--background-color-active);
-    color: var(--text-color);
+  background-color: var(--background-color-active);
+  color: var(--text-color);
 }
 
 .button:disabled {
-    background-color: var(--button-background-disabled);
-    color: var(--button-text-color-disabled);
-    cursor: not-allowed;
+  background-color: var(--button-background-disabled);
+  color: var(--button-text-color-disabled);
+  cursor: not-allowed;
 }
