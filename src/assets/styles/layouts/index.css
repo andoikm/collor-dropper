@@ -1,26 +1,26 @@
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  background-color: var(--button-background);
-  border-radius: 10px;
-  box-shadow: 0 4px 20px var(--shadow-color);
+  display: flex;
   padding: 20px;
   max-width: 600px;
   margin: 20px auto;
-  display: flex;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  background-color: var(--button-background);
 }
 
 .header {
+  gap: 15px;
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 
 .header .toggle-button {
