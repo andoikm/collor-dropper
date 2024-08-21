@@ -1,0 +1,28 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--button-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .toggle-button {
+    margin-left: auto;
+}

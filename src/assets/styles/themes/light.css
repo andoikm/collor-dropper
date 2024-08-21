@@ -1,0 +1,13 @@
+:root {
+    --background-color: #f5f5f5;
+    --background-color-active: #6200ea;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+    --button-text-color: #333;
+    --button-background: #fff;
+    --button-background-disabled: #e0e0e0;
+    --button-text-color-disabled: #aaa;
+    --progress-background: #e0e0e0;
+    --progress-color: #6200ea;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}

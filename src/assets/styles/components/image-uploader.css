@@ -1,0 +1,3 @@
+.image-uploader .upload-button input[type='file'] {
+    display: none;
+}

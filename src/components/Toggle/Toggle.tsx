@@ -11,7 +11,7 @@ const Toggle: React.FC<ToggleProps> = ({ checked, onChange }) => {
   };
 
   return (
-    <label className="theme-toggle">
+    <label className="toggle-button">
       <input
         type="checkbox"
         id="theme-checkbox"
