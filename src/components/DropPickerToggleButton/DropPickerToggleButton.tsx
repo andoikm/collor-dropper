@@ -17,6 +17,7 @@ const DropPickerToggleButton = () => {
       aria-label="Toggle drop picker"
     >
       <ColorPickerIcon />
+      {isDropPickerActive ? "On" : "Off"}
     </button>
   );
 };

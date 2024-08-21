@@ -18,19 +18,28 @@ const HexInput: FC<HexInputProps> = ({ selectedColor, hoveredColor }) => {
   const hexStyle: CSSProperties = {
     '--hex-bg-color': hoveredColor,
     '--hex-border-color': selectedColor,
-    '--hex-selected-color': selectedColor,
+    '--hex-selected-color': selectedColor
   } as CSSProperties;
+
 
   return (
     <div className="hex-input" style={hexStyle}>
-      <div className="color-box"></div>
-      <span className="hex-code">{selectedColor}</span>
-      <span className="hex-code">{hoveredColor}</span>
-      <button className="button" disabled={!selectedColor} onClick={handleCopy}>
-        Copy
-      </button>
+      {!selectedColor && !hoveredColor
+        ? <p>Choose a color.</p>
+        : (
+          <>
+            <div className="color-box"></div>
+            <span className="hex-code">{hoveredColor}</span>
+            <span className="hex-code">{selectedColor}</span>
+            <button className="button" disabled={!selectedColor} onClick={handleCopy}>
+              Copy
+            </button>
+          </>
+        )
+      }
     </div>
-  );
+  )
+    ;
 };
 
 export default HexInput;
