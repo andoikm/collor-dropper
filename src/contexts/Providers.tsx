@@ -9,7 +9,9 @@ interface ProvidersProps {
 const Providers: React.FC<ProvidersProps> = ({ children }) => {
   return (
     <ThemeProvider>
-      <DropPickerProvider>{children}</DropPickerProvider>
+      <DropPickerProvider>
+        {children}
+      </DropPickerProvider>
     </ThemeProvider>
   );
 };
