@@ -1,11 +1,11 @@
 import Header from '../../components/Header/Header';
-import DropPickerToggleButton from '../../components/DropPickerToggleButton/DropPickerToggleButton';
-import ImageUploader from '../../components/ImageUploader/ImageUploader';
 import Toggle from '../../components/Toggle/Toggle';
-import Progress from '../../components/Progress/Progress';
-import DrawingBoard from '../../components/DrawingBoard/DrawingBoard';
 import React, { useCallback, useState } from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
+import Progress from '../../components/Progress/Progress';
+import DrawingBoard from '../../components/DrawingBoard/DrawingBoard';
+import ImageUploader from '../../components/ImageUploader/ImageUploader';
+import DropPickerToggleButton from '../../components/DropPickerToggleButton/DropPickerToggleButton';
 
 const defaultState =
   'https://www.vorteqcarbon.com/cdn/shop/products/323716841_389760836706321_6500463296610750942_n.jpg';

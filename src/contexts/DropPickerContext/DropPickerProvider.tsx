@@ -2,8 +2,8 @@ import React, { useReducer, useCallback } from 'react';
 import { DropPickerContext } from './DropPickerContext';
 import {
   APP_ACTIONS,
-  colorDropperReducer,
   INITIAL_STATE,
+  colorDropperReducer,
 } from '../../reducers/colorDropperReducer';
 
 type DropPickerProviderType = {

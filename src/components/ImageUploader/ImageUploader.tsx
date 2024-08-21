@@ -11,7 +11,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
   onChangeProgress,
 }) => {
   const [progress, setProgress] = useState<number>(0);
-  const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024;
+  const maxSizeBytes = MAX_SIZE_MB * 1024 * 1024;
 
   useEffect(() => {
     onChangeProgress(progress);
@@ -26,7 +26,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
         return;
       }
 
-      if (file.size > MAX_SIZE_BYTES) {
+      if (file.size > maxSizeBytes) {
         console.error(`File size exceeds ${MAX_SIZE_MB} MB limit.`);
         return;
       }

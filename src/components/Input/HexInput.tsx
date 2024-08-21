@@ -27,7 +27,7 @@ const HexInput: FC<HexInputProps> = ({ selectedColor, hoveredColor }) => {
         <p>Choose a color.</p>
       ) : (
         <>
-          <div className="color-box"></div>
+          <div className="color-box" />
           <span className="hex-code">{hoveredColor}</span>
           <span className="hex-code">{selectedColor}</span>
           <button

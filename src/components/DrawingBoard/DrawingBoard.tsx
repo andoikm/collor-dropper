@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import { CANVAS_WIDTH } from '../../constants/constants';
-import * as hooks from '../../hooks';
 import Canvas from './Canvas';
+import * as hooks from '../../hooks';
 import HexInput from '../Input/HexInput';
+import { CANVAS_WIDTH } from '../../constants/constants';
 
 interface DrawingBoardProps {
   src: string;
@@ -28,7 +28,7 @@ const DrawingBoard: React.FC<DrawingBoardProps> = ({ src }) => {
     <>
       <HexInput selectedColor={selectedColor} hoveredColor={hoveredColor} />
       <div className="canvas-container" style={canvasContainerStyle}>
-        <Canvas ref={canvasRef} htmlId="canvas-board" />
+        <Canvas htmlId="canvas-board" ref={canvasRef} />
         <Canvas htmlId="canvas-worker" ref={canvasWorkerRef} />
       </div>
     </>

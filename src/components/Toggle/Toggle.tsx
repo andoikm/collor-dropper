@@ -18,7 +18,7 @@ const Toggle: React.FC<ToggleProps> = ({ checked, onChange }) => {
         checked={checked}
         onChange={handleToggle}
       />
-      <div className="toggle-slider"></div>
+      <div className="toggle-slider" />
     </label>
   );
 };

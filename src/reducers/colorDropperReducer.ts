@@ -26,10 +26,7 @@ export const colorDropperReducer = (
     case APP_ACTIONS.SET_COLOR:
       return { ...state, selectedColor: payload.selectedColor };
     case APP_ACTIONS.SET_DROP_PICKER_ACTIVE:
-      return {
-        ...state,
-        isDropPickerActive: payload.isDropPickerActive,
-      };
+      return { ...state, isDropPickerActive: payload.isDropPickerActive };
     default:
       throw Error(`Wrong action type: ${type}`);
   }
